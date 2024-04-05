@@ -2,7 +2,7 @@ public class Studierender {
     private String name;
     private int matrikelnummer;
     private String studiengang;
-   
+  
     public String getName() {
         return name;
     }
@@ -27,8 +27,18 @@ public class Studierender {
         this.studiengang = studiengang;
     }
 
-    public void frageStellen(String frage, String professor) {
-        System.out.println("An:" + professor);
-        System.out.println(frage);
+    public void frageStellen(Dozierender professor) {
+
+        System.out.println("Was ist die Frage?");
+        String frage = Input.readString();
+
+    }
+
+    public void sprechstundenanfrage(Dozierender professor) {
+        System.out.print("Betreff: ");
+        String betreff = Input.readString();
+
+        System.out.println("Zeit: ");
+        String zeit = Input.readString();
     }
 }
