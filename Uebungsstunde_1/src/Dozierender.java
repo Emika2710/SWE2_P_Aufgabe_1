@@ -48,6 +48,5 @@ public class Dozierender {
         System.out.println("Unterrichtsqualität"+antwort1);
         System.out.println("generelle Stimmung"+antwort2);
         System.out.println("Kompetenz des Dozierenden"+antwort3);
-    
     } 
 }
