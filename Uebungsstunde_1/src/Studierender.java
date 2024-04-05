@@ -38,6 +38,14 @@ public class Studierender {
         System.out.print("Betreff: ");
         String betreff = Input.readString();
 
+        System.out.println("Spechstunden: ");
+        String[][] buerozeiten = professor.getBuerozeiten();
+        for (int i = 0; i < 3; i++) {
+            System.out.print(buerozeiten[0][i] + buerozeiten[1][i]);
+        }
+
+        System.out.println();
+
         System.out.println("Zeit: ");
         String zeit = Input.readString();
     }
