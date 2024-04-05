@@ -2,8 +2,6 @@ public class Studierender {
     private String name;
     private int matrikelnummer;
     private String studiengang;
-    private String fragen;
-
     public String getName() {
         return name;
     }
@@ -32,7 +30,7 @@ public class Studierender {
 
         System.out.println("Was ist die Frage?");
         String frage = Input.readString();
-        this.fragen = frage;
+
     }
 
     public void sprechstundenanfrage(Dozierender professor) {
