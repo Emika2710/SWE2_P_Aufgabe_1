@@ -28,4 +28,3 @@ public class Dozierender {
         return antwort;
     }
 }
-
