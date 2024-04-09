@@ -57,5 +57,15 @@ public class Lehrveranstaltung {
     public void setPraktikumsstunden(Praktikumsstunde praktikumsstunden) {
         this.praktikumsstunden = praktikumsstunden;
     }
-
+    public void detaisAnzeige() {
+        System.out.println(titel);
+        System.out.println(dozierender);
+        System.out.println(veranstaltungsgröße);
+        System.out.println(vorlesungsstunden);
+        System.out.println(praktikumsstunden);
+        System.out.println("Teilnehmer");
+        for(int i = 0; i< studierende.length; i++) {
+            System.out.println(studierende[i] + " ");
+        }
+    }
 }
