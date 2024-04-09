@@ -3,6 +3,7 @@ public class Studierender {
     private String name;
     private int matrikelnummer;
     private String studiengang;
+    // Aufgabe 3.2
     private String frage;
 
     // Getter und Setter
@@ -28,6 +29,10 @@ public class Studierender {
 
     public void setStudiengang(String studiengang) {
         this.studiengang = studiengang;
+    }
+
+    public String getFrage() {
+        return frage;
     }
 
     // Frage stellen
