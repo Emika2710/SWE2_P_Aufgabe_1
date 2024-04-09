@@ -27,13 +27,13 @@ public class Lehrveranstaltung {
     }
 
     public void newStudierender(Studierender student) {
-        Studierender[veranstaltungsgröße + 1] = student;
+        studierende[veranstaltungsgröße + 1] = student;
         veranstaltungsgröße++;
     }
 
     public void studentEntfernen(Studierender student) {
         for (int i = 0; i < veranstaltungsgröße; i++) {
-            if (this.studierende[i].getMatrikelnummer().equals(student.getMatrikelnummer())) {
+            if (this.studierende[i].getMatrikelnummer() == student.getMatrikelnummer()) {
                 for (int j = 0; j > veranstaltungsgröße - i; i++) {
                     studierende[j] = studierende[j + 1];
                 }
