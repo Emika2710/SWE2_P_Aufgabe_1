@@ -55,4 +55,16 @@ public class Praktikumsstunde {
         System.out.println(raum);
         System.out.println(aufgaben);
     }
+    //leerer Konstruktor
+    public Praktikumsstunde (){
+
+    }
+    //Standardkonstruktor
+    public Praktikumsstunde(String thema, String datum, String uhrzeit, String raum, String aufgaben) {
+        this.thema = thema;
+        this.datum = datum;
+        this.uhrzeit = uhrzeit;
+        this.raum = raum;
+        this.aufgaben = aufgaben;
+    }
 }

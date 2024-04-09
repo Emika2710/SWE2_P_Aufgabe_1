@@ -6,6 +6,14 @@ public class Vorlesungsstunde {
     private String raum;
 
     // Getter und Setter
+    public String getThema() {
+        return thema;
+    }
+
+    public void setThema() {
+        this.thema = thema;
+    }
+    
     public String getDatum() {
         return datum;
     }
@@ -36,5 +44,16 @@ public class Vorlesungsstunde {
         System.out.println(datum);
         System.out.println(uhrzeit);
         System.out.println(raum);
+    }
+    //Leerer Konstruktor
+    public Vorlesungsstunde() {
+    }
+
+    //Standardkonstruktor
+    public Vorlesungsstunde(String thema, String datum, String uhrzeit, String raum) {
+        this.thema = thema;
+        this.datum = datum;
+        this.uhrzeit = uhrzeit;
+        this.raum = raum;
     }
 }
