@@ -73,5 +73,15 @@ public class Lehrveranstaltung {
         this.praktikumsstunden[anzahlPraktikumsstunden] = praktikumsstunden;
         anzahlPraktikumsstunden++;
     }
-
+    public void detaisAnzeige() {
+        System.out.println(titel);
+        System.out.println(dozierender);
+        System.out.println(veranstaltungsgröße);
+        System.out.println(vorlesungsstunden);
+        System.out.println(praktikumsstunden);
+        System.out.println("Teilnehmer");
+        for(int i = 0; i< studierende.length; i++) {
+            System.out.println(studierende[i] + " ");
+        }
+    }
 }
