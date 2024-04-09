@@ -23,8 +23,13 @@ public class Test {
         // Probleme: man kann Fragen stellen, aber nicht sehr dynamisch, da man den
         // kompletten ablauf in der Main Methode vorher eingeben muss
 
-        Lehrveranstaltung kurs1 = new Lehrveranstaltung();
+        Lehrveranstaltung kurs1 = new Lehrveranstaltung("Grundlagen der Informatik", 0, 0, 0);
         Lehrveranstaltung kurs2 = new Lehrveranstaltung();
+
+        kurs2.setTitel("Datenbanken");
+
+        student2.fürLehrveranstaltungAnmelden(kurs1);
+        System.out.println(kurs1.getStudent(1).getName());
 
     }
 }
