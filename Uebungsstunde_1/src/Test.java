@@ -32,5 +32,9 @@ public class Test {
         student2.fürLehrveranstaltungAnmelden(kurs1);
         System.out.println(kurs1.getStudent(1).getName());
 
+        Vorlesungsstunde vorlesung1 = new Vorlesungsstunde("Thema", "09.04.2024", "12:00 Uhr", "G116",
+                "keine Aufgaben");
+        Vorlesungsstunde vorlesung2 = new Vorlesungsstunde();
+
     }
 }
