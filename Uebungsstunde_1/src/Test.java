@@ -46,5 +46,7 @@ public class Test {
         kurs1.setPraktikumsstunden(praktikumsstunde1);
 
         kurs1.detaisAnzeige();
+
+        System.out.println("Fin");
     }
 }
