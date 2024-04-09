@@ -6,6 +6,13 @@ public class Studierender {
     // Aufgabe 3.2
     private String frage;
 
+    // Konstruktor
+    public Studierender(String name, int matrikelnummer, String studiengang) {
+        this.name = name;
+        this.matrikelnummer = matrikelnummer;
+        this.studiengang = studiengang;
+    }
+
     // Getter und Setter
     public String getName() {
         return name;
