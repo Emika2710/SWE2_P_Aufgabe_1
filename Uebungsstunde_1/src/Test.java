@@ -26,6 +26,7 @@ public class Test {
         Lehrveranstaltung kurs1 = new Lehrveranstaltung("Grundlagen der Informatik", 0, 0, 0);
         Lehrveranstaltung kurs2 = new Lehrveranstaltung();
 
+        kurs1.setDozierender(dozent1);
         kurs2.setTitel("Datenbanken");
 
         student2.fürLehrveranstaltungAnmelden(kurs1);
