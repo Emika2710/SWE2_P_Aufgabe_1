@@ -14,8 +14,8 @@ public class Dozierender {
         this.bueronummer = bueronummer;
     }
 
-    public Dozierender(){
-        
+    public Dozierender() {
+
     }
 
     // Getter und Setter
@@ -75,5 +75,10 @@ public class Dozierender {
         System.out.println("Unterrichtsqualität" + antwort1);
         System.out.println("generelle Stimmung" + antwort2);
         System.out.println("Kompetenz des Dozierenden" + antwort3);
+    }
+
+    // Rings um Lehrveranstaltungen
+    public void studentAusVeranstaltungEntfernen(Lehrveranstaltung veranstaltung, Studierender student) {
+        veranstaltung.studentEntfernen(student);
     }
 }
