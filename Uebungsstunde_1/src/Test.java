@@ -1,5 +1,5 @@
 public class Test {
-    Dozierender dozent1 = new Dozierender("Herr Müller", "Informatik", "D101");
-
-    
+    public static void main(String[] args) throws Exception {
+        System.out.println("Hello, World!");
+    }
 }

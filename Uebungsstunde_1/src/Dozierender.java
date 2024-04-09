@@ -14,6 +14,10 @@ public class Dozierender {
         this.bueronummer = bueronummer;
     }
 
+    public Dozierender(){
+        
+    }
+
     // Getter und Setter
     public String getName() {
         return name;
