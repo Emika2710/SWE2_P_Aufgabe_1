@@ -81,4 +81,37 @@ public class Dozierender {
     public void studentAusVeranstaltungEntfernen(Lehrveranstaltung veranstaltung, Studierender student) {
         veranstaltung.studentEntfernen(student);
     }
+
+    public void VorlesungsstundePlanen(Lehrveranstaltung kurs) {
+
+        Vorlesungsstunde stunde = new Vorlesungsstunde();
+
+        System.out.print("Das Thema: ");
+        stunde.setThema(Input.readString());
+        System.out.print("Das Datum: ");
+        stunde.setDatum(Input.readString());
+        System.out.print("Die Uhrzeit:");
+        stunde.setUhrzeit(Input.readString());
+        System.out.print("Der Raum: ");
+        stunde.setRaum(Input.readString());
+
+        kurs.setVorlesungsstunden(stunde);
+    }
+
+    public void PraktikumsstundePlanen(Lehrveranstaltung kurs) {
+        Praktikumsstunde stunde = new Praktikumsstunde();
+
+        System.out.print("Das Thema: ");
+        stunde.setThema(Input.readString());
+        System.out.print("Das Datum: ");
+        stunde.setDatum(Input.readString());
+        System.out.print("Die Uhrzeit:");
+        stunde.setUhrzeit(Input.readString());
+        System.out.print("Der Raum: ");
+        stunde.setRaum(Input.readString());
+        System.out.print("Die Aufgabe: ");
+        stunde.setAufgaben(Input.readString());
+
+        kurs.setPraktikumsstunden(stunde);
+    }
 }

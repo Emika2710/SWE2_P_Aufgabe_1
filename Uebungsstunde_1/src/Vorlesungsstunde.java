@@ -10,7 +10,7 @@ public class Vorlesungsstunde {
         return thema;
     }
 
-    public void setThema() {
+    public void setThema(String thema) {
         this.thema = thema;
     }
 
@@ -45,11 +45,12 @@ public class Vorlesungsstunde {
         System.out.println(uhrzeit);
         System.out.println(raum);
     }
-    //Leerer Konstruktor
+
+    // Leerer Konstruktor
     public Vorlesungsstunde() {
     }
 
-    //Standardkonstruktor
+    // Standardkonstruktor
     public Vorlesungsstunde(String thema, String datum, String uhrzeit, String raum) {
         this.thema = thema;
         this.datum = datum;
