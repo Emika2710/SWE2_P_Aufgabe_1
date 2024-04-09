@@ -47,7 +47,7 @@ public class Praktikumsstunde {
         this.aufgaben = aufgaben;
     }
 
-    // Methode
+    // Methode zur Ausgabe der Praktikumsdetails
     public void praktikumsstunde() {
         System.out.println(thema);
         System.out.println(datum);

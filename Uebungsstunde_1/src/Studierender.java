@@ -72,7 +72,6 @@ public class Studierender {
     }
 
     // sich für Lehrveranstaltung anmelden
-
     public void fürLehrveranstaltungAnmelden(Lehrveranstaltung lehrveranstaltung) {
         Studierender ich = new Studierender(this.name, this.matrikelnummer, this.studiengang);
         lehrveranstaltung.newStudierender(ich);
