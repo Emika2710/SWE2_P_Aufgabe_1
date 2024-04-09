@@ -7,6 +7,12 @@ public class Dozierender {
     private String[][] buerozeiten = { { "Montag", "Dienstag", "Mittwoch" },
             { "13.00-14.00", "12.30-14.00", "10.00-10-30" } };
 
+    public Dozierender(String name, String fakultät, String bueronummer) {
+        this.name = name;
+        this.fakultaet = fakultät;
+        this.bueronummer = bueronummer;
+    }
+
     // Getter und Setter
     public String getName() {
         return name;
