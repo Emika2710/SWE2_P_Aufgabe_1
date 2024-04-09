@@ -87,14 +87,21 @@ public class Lehrveranstaltung {
 
     // Ausgabe
     public void detaisAnzeige() {
+        System.out.print("Titel: ");
         System.out.println(titel);
+        System.out.print("Dozent: ");
         System.out.println(dozierender.getName());
+        System.out.print("Veranstaltungsgröße: ");
         System.out.println(veranstaltungsgröße);
-        System.out.println(vorlesungsstunden);
-        System.out.println(praktikumsstunden);
+        System.out.print("Anzahl der Praktikumsstunden: ");
+        System.out.println(anzahlPraktikumsstunden);
+        System.out.print("Anzahl der Vorlesungsstunden: ");
+        System.out.println(anzahlVorlesungsstunden);
         System.out.println("Teilnehmer");
-        for (int i = 0; i < studierende.length; i++) {
-            System.out.println(studierende[i] + " ");
+        for (int i = 0; i < veranstaltungsgröße; i++) {
+            if (studierende[i] != null) {
+                System.out.println(studierende[i] + " ");
+            }
         }
     }
 
