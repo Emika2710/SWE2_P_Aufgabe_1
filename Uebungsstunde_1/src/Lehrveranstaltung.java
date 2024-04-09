@@ -3,8 +3,10 @@ public class Lehrveranstaltung {
     private Dozierender dozierender;
     private Studierender[] studierende = new Studierender[100];
     private int veranstaltungsgröße = 0;
-    private Vorlesungsstunde vorlesungsstunden;
-    private Praktikumsstunde praktikumsstunden;
+    private Vorlesungsstunde[] vorlesungsstunden = new Vorlesungsstunde[100];
+    private int anzahlVorlesungsstunden = 0;
+    private Praktikumsstunde[] praktikumsstunden = new Praktikumsstunde[100];
+    private int anzahlPraktikumsstunden = 0;
 
     public String getTitel() {
         return titel;
@@ -22,12 +24,16 @@ public class Lehrveranstaltung {
         this.dozierender = dozierender;
     }
 
+    public Studierender getStudent(int index) {
+        return studierende[index - 1];
+    }
+
     public Studierender[] getStudierende() {
         return studierende;
     }
 
     public void newStudierender(Studierender student) {
-        studierende[veranstaltungsgröße + 1] = student;
+        studierende[veranstaltungsgröße] = student;
         veranstaltungsgröße++;
     }
 
@@ -42,20 +48,30 @@ public class Lehrveranstaltung {
         }
     }
 
-    public Vorlesungsstunde getVorlesungsstunden() {
+    public Vorlesungsstunde[] getVorlesungsstunden() {
         return vorlesungsstunden;
     }
 
-    public void setVorlesungsstunden(Vorlesungsstunde vorlesungsstunden) {
-        this.vorlesungsstunden = vorlesungsstunden;
+    public Vorlesungsstunde getVorlesungsstunde(int index) {
+        return vorlesungsstunden[index - 1];
     }
 
-    public Praktikumsstunde getPraktikumsstunden() {
+    public void setVorlesungsstunden(Vorlesungsstunde vorlesungsstunden) {
+        this.vorlesungsstunden[anzahlVorlesungsstunden] = vorlesungsstunden;
+        anzahlVorlesungsstunden++;
+    }
+
+    public Praktikumsstunde[] getPraktikumsstunden() {
         return praktikumsstunden;
     }
 
+    public Praktikumsstunde getPraktikumsstunde(int index) {
+        return praktikumsstunden[index - 1];
+    }
+
     public void setPraktikumsstunden(Praktikumsstunde praktikumsstunden) {
-        this.praktikumsstunden = praktikumsstunden;
+        this.praktikumsstunden[anzahlPraktikumsstunden] = praktikumsstunden;
+        anzahlPraktikumsstunden++;
     }
 
 }
