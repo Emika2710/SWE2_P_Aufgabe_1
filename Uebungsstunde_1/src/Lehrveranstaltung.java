@@ -95,4 +95,15 @@ public class Lehrveranstaltung {
             System.out.println(studierende[i] + " ");
         }
     }
+    // Lehrer Konstruktor
+    public Lehrveranstaltung () {
+         
+    }
+    //Standardkonstruktor
+    public Lehrveranstaltung (String titel, int veranstaltungsgröße, int anzahlPraktikumsstunden, int anzahlVorlesungsstunden) {
+        this.titel = titel;
+        this.veranstaltungsgröße = veranstaltungsgröße;
+        this.anzahlPraktikumsstunden = anzahlPraktikumsstunden;
+        this.anzahlVorlesungsstunden = anzahlVorlesungsstunden;
+    }
 }
