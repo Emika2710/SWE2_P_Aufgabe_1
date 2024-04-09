@@ -1,8 +1,11 @@
 public class Studierender {
+    // Datenfelder
     private String name;
     private int matrikelnummer;
     private String studiengang;
+    private String frage;
 
+    // Getter und Setter
     public String getName() {
         return name;
     }
@@ -27,13 +30,15 @@ public class Studierender {
         this.studiengang = studiengang;
     }
 
+    // Frage stellen
     public void frageStellen(Dozierender professor) {
 
         System.out.println("Was ist die Frage?");
-        String frage = Input.readString();
+        this.frage = Input.readString();
 
     }
 
+    // Sprechstundenanfrage
     public void sprechstundenanfrage(Dozierender professor) {
         System.out.print("Betreff: ");
         String betreff = Input.readString();

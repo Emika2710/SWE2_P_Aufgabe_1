@@ -1,10 +1,13 @@
 public class Dozierender {
+    // Datenfelder
     private String name;
     private String fakultaet;
     private String bueronummer;
+    // Aufgabe 3
     private String[][] buerozeiten = { { "Montag", "Dienstag", "Mittwoch" },
             { "13.00-14.00", "12.30-14.00", "10.00-10-30" } };
 
+    //Getter und Setter
     public String getName() {
         return name;
     }
