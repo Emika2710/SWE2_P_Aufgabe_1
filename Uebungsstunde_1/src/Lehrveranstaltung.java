@@ -47,9 +47,11 @@ public class Lehrveranstaltung {
     public void studentEntfernen(Studierender student) {
         for (int i = 0; i < veranstaltungsgröße; i++) {
             if (this.studierende[i].getMatrikelnummer() == student.getMatrikelnummer()) {
-                for (int j = 0; j > veranstaltungsgröße - i; i++) {
+                studierende[i] = null;
+                for (int j = i; j > veranstaltungsgröße; j++) {
                     studierende[j] = studierende[j + 1];
                 }
+                veranstaltungsgröße--;
                 break;
             }
         }
@@ -95,12 +97,15 @@ public class Lehrveranstaltung {
             System.out.println(studierende[i] + " ");
         }
     }
+
     // Lehrer Konstruktor
-    public Lehrveranstaltung () {
-         
+    public Lehrveranstaltung() {
+
     }
-    //Standardkonstruktor
-    public Lehrveranstaltung (String titel, int veranstaltungsgröße, int anzahlPraktikumsstunden, int anzahlVorlesungsstunden) {
+
+    // Standardkonstruktor
+    public Lehrveranstaltung(String titel, int veranstaltungsgröße, int anzahlPraktikumsstunden,
+            int anzahlVorlesungsstunden) {
         this.titel = titel;
         this.veranstaltungsgröße = veranstaltungsgröße;
         this.anzahlPraktikumsstunden = anzahlPraktikumsstunden;

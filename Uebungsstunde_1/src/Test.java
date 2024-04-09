@@ -32,9 +32,19 @@ public class Test {
         student2.fürLehrveranstaltungAnmelden(kurs1);
         System.out.println(kurs1.getStudent(1).getName());
 
-        Vorlesungsstunde vorlesung1 = new Vorlesungsstunde("Thema", "09.04.2024", "12:00 Uhr", "G116",
-                "keine Aufgaben");
+        Vorlesungsstunde vorlesung1 = new Vorlesungsstunde("Thema", "09.04.2024", "12:00 Uhr", "G116");
         Vorlesungsstunde vorlesung2 = new Vorlesungsstunde();
 
+        dozent1.studentAusVeranstaltungEntfernen(kurs1, student2);
+
+        kurs1.setVorlesungsstunden(vorlesung1);
+        kurs1.setVorlesungsstunden(vorlesung2);
+
+        Praktikumsstunde praktikumsstunde1 = new Praktikumsstunde("Thema", "10.04.2024", "8:00 Uhr", "C105",
+                "keine Aufgaben");
+
+        kurs1.setPraktikumsstunden(praktikumsstunde1);
+
+        kurs1.detaisAnzeige();
     }
 }
