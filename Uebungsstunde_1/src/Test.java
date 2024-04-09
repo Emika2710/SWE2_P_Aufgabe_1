@@ -24,5 +24,7 @@ public class Test {
         // kompletten ablauf in der Main Methode vorher eingeben muss
 
         Lehrveranstaltung kurs1 = new Lehrveranstaltung();
+        Lehrveranstaltung kurs2 = new Lehrveranstaltung();
+
     }
 }
