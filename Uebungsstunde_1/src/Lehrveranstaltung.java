@@ -62,7 +62,7 @@ public class Lehrveranstaltung {
         return vorlesungsstunden;
     }
 
-    public Vorlesungsstunde getVorlesungsstunde(int index) {
+    public Vorlesungsstunde getVorlesungsstunden(int index) {
         return vorlesungsstunden[index - 1];
     }
 
@@ -88,7 +88,7 @@ public class Lehrveranstaltung {
     // Ausgabe
     public void detaisAnzeige() {
         System.out.println(titel);
-        System.out.println(dozierender);
+        System.out.println(dozierender.getName());
         System.out.println(veranstaltungsgröße);
         System.out.println(vorlesungsstunden);
         System.out.println(praktikumsstunden);
