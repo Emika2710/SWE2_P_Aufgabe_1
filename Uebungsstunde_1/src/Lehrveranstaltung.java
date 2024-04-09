@@ -1,12 +1,15 @@
 public class Lehrveranstaltung {
 
-    //
+    // Datenfelder
     private String titel;
     private Dozierender dozierender;
+
     private Studierender[] studierende = new Studierender[100];
     private int veranstaltungsgröße = 0;
+
     private Vorlesungsstunde[] vorlesungsstunden = new Vorlesungsstunde[100];
     private int anzahlVorlesungsstunden = 0;
+
     private Praktikumsstunde[] praktikumsstunden = new Praktikumsstunde[100];
     private int anzahlPraktikumsstunden = 0;
 
@@ -52,8 +55,7 @@ public class Lehrveranstaltung {
         }
     }
 
-
-    //Getter und Setter rings um Vorlesungsstunden
+    // Getter und Setter rings um Vorlesungsstunden
     public Vorlesungsstunde[] getVorlesungsstunden() {
         return vorlesungsstunden;
     }
@@ -67,7 +69,7 @@ public class Lehrveranstaltung {
         anzahlVorlesungsstunden++;
     }
 
-    //Getter und Setter rings um Praktikumsstunden
+    // Getter und Setter rings um Praktikumsstunden
     public Praktikumsstunde[] getPraktikumsstunden() {
         return praktikumsstunden;
     }
@@ -81,7 +83,7 @@ public class Lehrveranstaltung {
         anzahlPraktikumsstunden++;
     }
 
-    //Ausgabe
+    // Ausgabe
     public void detaisAnzeige() {
         System.out.println(titel);
         System.out.println(dozierender);

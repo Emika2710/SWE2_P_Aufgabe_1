@@ -1,4 +1,5 @@
 public class Praktikumsstunde {
+    // Datenfelder
     private String thema;
     private String datum;
     private String uhrzeit;
