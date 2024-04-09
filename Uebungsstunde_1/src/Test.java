@@ -17,5 +17,10 @@ public class Test {
         student3.setName("Alexander Horn");
         student3.setMatrikelnummer(000003);
         student3.setStudiengang("Informatik");
+
+        student1.frageStellen(dozent1);
+        dozent1.answerQuestion(student1);
+        // Probleme: man kann Fragen stellen, aber nicht sehr dynamisch, da man den
+        // kompletten ablauf in der Main Methode vorher eingeben muss
     }
 }
