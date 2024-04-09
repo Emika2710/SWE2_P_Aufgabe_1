@@ -40,6 +40,7 @@ public class Dozierender {
         this.buerozeiten = buerozeiten;
     }
 
+    // Frage beantworten
     public String answerQuestion(Studierender studierender) {
         String frage = studierender.getFrage();
         System.out.println(frage);
