@@ -13,7 +13,7 @@ public class Vorlesungsstunde {
     public void setThema() {
         this.thema = thema;
     }
-    
+
     public String getDatum() {
         return datum;
     }
