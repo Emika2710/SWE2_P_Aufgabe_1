@@ -1,4 +1,6 @@
 public class Lehrveranstaltung {
+
+    //
     private String titel;
     private Dozierender dozierender;
     private Studierender[] studierende = new Studierender[100];
@@ -8,6 +10,7 @@ public class Lehrveranstaltung {
     private Praktikumsstunde[] praktikumsstunden = new Praktikumsstunde[100];
     private int anzahlPraktikumsstunden = 0;
 
+    // Getter und Setter für Titel und Dozent
     public String getTitel() {
         return titel;
     }
@@ -24,6 +27,7 @@ public class Lehrveranstaltung {
         this.dozierender = dozierender;
     }
 
+    // Getter und Setter für Studierende, bzw. Studierende Hinzufügen und entfernen
     public Studierender getStudent(int index) {
         return studierende[index - 1];
     }
@@ -48,6 +52,8 @@ public class Lehrveranstaltung {
         }
     }
 
+
+    //Getter und Setter rings um Vorlesungsstunden
     public Vorlesungsstunde[] getVorlesungsstunden() {
         return vorlesungsstunden;
     }
@@ -61,6 +67,7 @@ public class Lehrveranstaltung {
         anzahlVorlesungsstunden++;
     }
 
+    //Getter und Setter rings um Praktikumsstunden
     public Praktikumsstunde[] getPraktikumsstunden() {
         return praktikumsstunden;
     }
@@ -73,6 +80,8 @@ public class Lehrveranstaltung {
         this.praktikumsstunden[anzahlPraktikumsstunden] = praktikumsstunden;
         anzahlPraktikumsstunden++;
     }
+
+    //Ausgabe
     public void detaisAnzeige() {
         System.out.println(titel);
         System.out.println(dozierender);
@@ -80,7 +89,7 @@ public class Lehrveranstaltung {
         System.out.println(vorlesungsstunden);
         System.out.println(praktikumsstunden);
         System.out.println("Teilnehmer");
-        for(int i = 0; i< studierende.length; i++) {
+        for (int i = 0; i < studierende.length; i++) {
             System.out.println(studierende[i] + " ");
         }
     }
