@@ -55,6 +55,7 @@ public class Dozierender {
     public String answerQuestion(Studierender studierender) {
         String frage = studierender.getFrage();
         System.out.println(frage);
+        System.out.println("Bitte geben Sie die Antwort zur Frage ein");
         String antwort;
         antwort = Input.readString();
         return antwort;
