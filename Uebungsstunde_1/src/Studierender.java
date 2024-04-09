@@ -70,4 +70,11 @@ public class Studierender {
         System.out.println("Zeit: ");
         String zeit = Input.readString();
     }
+
+    // sich für Lehrveranstaltung anmelden
+
+    public void fürLehrveranstaltungAnmelden(Lehrveranstaltung lehrveranstaltung) {
+        Studierender ich = new Studierender(this.name, this.matrikelnummer, this.studiengang);
+        lehrveranstaltung.newStudierender(ich);
+    }
 }

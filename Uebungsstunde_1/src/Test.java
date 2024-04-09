@@ -22,5 +22,7 @@ public class Test {
         dozent1.answerQuestion(student1);
         // Probleme: man kann Fragen stellen, aber nicht sehr dynamisch, da man den
         // kompletten ablauf in der Main Methode vorher eingeben muss
+
+        Lehrveranstaltung kurs1 = new Lehrveranstaltung();
     }
 }
