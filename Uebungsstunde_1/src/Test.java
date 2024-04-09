@@ -1,5 +1,21 @@
 public class Test {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        Dozierender dozent1 = new Dozierender("Herr Müller", "Informatik", "G101");
+        Dozierender dozent2 = new Dozierender();
+
+        dozent2.setName("Frau Bauer");
+        dozent2.setFakultaet("Maschinenbau");
+        dozent2.setBueronummer("B104");
+
+        String[][] buerozeiten1 = { { "Montag", "Dienstag" }, { "13:00 Uhr" } };
+        dozent1.setBuerozeiten(buerozeiten1);
+
+        Studierender student1 = new Studierender("Elmar Lienert", 000001, "Informatik");
+        Studierender student2 = new Studierender("Felix Weber", 000002, "KI");
+        Studierender student3 = new Studierender();
+
+        student3.setName("Alexander Horn");
+        student3.setMatrikelnummer(000003);
+        student3.setStudiengang("Informatik");
     }
 }

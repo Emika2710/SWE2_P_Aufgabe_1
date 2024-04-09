@@ -13,6 +13,10 @@ public class Studierender {
         this.studiengang = studiengang;
     }
 
+    public Studierender() {
+
+    }
+
     // Getter und Setter
     public String getName() {
         return name;
