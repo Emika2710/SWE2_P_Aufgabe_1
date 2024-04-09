@@ -7,7 +7,7 @@ public class Dozierender {
     private String[][] buerozeiten = { { "Montag", "Dienstag", "Mittwoch" },
             { "13.00-14.00", "12.30-14.00", "10.00-10-30" } };
 
-    //Getter und Setter
+    // Getter und Setter
     public String getName() {
         return name;
     }
@@ -40,9 +40,9 @@ public class Dozierender {
         this.buerozeiten = buerozeiten;
     }
 
-    public String answerQuestion(Studierender Studierender) {
-        String Frage = Studierender.getFrage(); 
-        System.out.println(Frage);
+    public String answerQuestion(Studierender studierender) {
+        String frage = studierender.getFrage();
+        System.out.println(frage);
         String antwort;
         antwort = Input.readString();
         return antwort;
